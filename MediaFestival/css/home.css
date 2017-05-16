@@ -1,0 +1,320 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    min-width: 927px;
+    min-height: 800px;
+}
+body{
+    background: url(../images/home_container_background.jpg) no-repeat center center;
+    background-size: cover;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.nav{
+    position: relative;
+    width: 813px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    z-index: 233;
+}
+.nav a{
+    text-decoration: none;
+    color: #000;
+    float: right;
+    margin-right: 30px;
+}
+.nav a:after{
+    content: "";
+    width: 0;
+    border-top: 2px solid #000;
+    display: block;
+    margin: 0 auto;
+    transition: .5s;
+}
+.nav a:hover:after{
+    width: 100%;
+}
+
+
+.slogan{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.slogan:after{
+    content: "";
+    width: 5rem;
+    display: block;
+    border-bottom: 2px solid #000;
+    margin: 2.5rem auto;
+}
+
+.content{
+    position: absolute;
+    left:0;
+    right:0;
+    top:12rem;
+    bottom:10rem;
+    max-width:927px;
+    max-height:610px;
+    font-size:0;
+}
+.content .line{
+    height:100%;
+    width:33.333%;
+    display: inline-block;
+    position: relative;
+}
+/*.content .part.willAppear{*/
+    /*opacity:0;*/
+/*}*/
+.content .part{
+    position: absolute;
+
+    -webkit-background-size:cover;
+    background-size:cover;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    opacity: 1;
+
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.content .showmask{
+    cursor: pointer;
+}
+.content .left .part{
+    right:0;
+}
+.content .right .part{
+    left: 0;
+}
+.content .center .part{
+    left: 0;
+    right: 0;
+}
+.content .left .middle{
+    top:39.344%;
+}
+.content .bottom{
+    bottom:0;
+}
+.content .center .middle{
+    top:34.426%;
+}
+.content .part:active:after{
+    -ms-background-position-x:-200%;
+    background-position-x:-200%;
+}
+.content .part:hover:after{
+    opacity: 1;
+}
+.content .part:after{
+    position: absolute;
+    content: '';
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    -webkit-background-size:cover;
+    background-size:cover;
+    opacity: 0;
+    background-position-x: -100%;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.content .left .top:after{
+    background-image: url(../images/left_top.jpg);
+}
+.content .left .middle:after{
+    background-image: url(../images/left_middle.jpg);
+}
+.content .left .bottom:after{
+    background-image: url(../images/left_bottom.jpg);
+}
+.content .center .top:after{
+    background-image: url(../images/center_top.jpg);
+}
+.content .center .bottom:after{
+    background-image: url(../images/center_bottom.jpg);
+}
+.content .right .top:after{
+    background-image: url(../images/right_top.jpg);
+}
+.content .right .bottom:after{
+    background-image: url(../images/right_bottom.jpg);
+}
+
+.footer{
+    position: absolute;
+    bottom:0;
+    height:7rem;
+    width:100%;
+    background:url("../images/footer.jpg") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+.footer .box{
+    position: relative;
+    width:927px;
+    height: 7rem;
+    margin: 0 auto;
+
+}
+.footer .box .txt{
+    line-height:2rem;
+    margin:15px 100px 0;
+    display: inline-block;
+}
+.footer .box .txt p{
+    font-family:"fzxd";
+    color: #928f98;
+    font-size:1rem;
+}
+.footer .sanyi{
+    height:98px;
+    width:74.5px;
+    background: url("../images/home_logo_sky31_wenxin.png")no-repeat;
+    float: right;
+    margin: 10px;
+}
+.footer .wenxin{
+    height:98px;
+    width:74.5px;
+    background:url("../images/home_logo_sky31_wenxin.png") 74.5px center;
+    float: right;
+    margin:10px 50px 0 ;
+}
+
+
+.mask{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 7rem;
+    background: url("../images/mask_background.jpg") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.maskshow{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.mask .close{
+    position: absolute;
+    width:54px;
+    height:52px;
+    background: url("../images/close_mask.png") no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+    cursor: pointer;
+    left:50%;
+    margin-left:-27px;
+    bottom: 20px;
+}
+.mask .circle{
+    position: absolute;
+    width:400px;
+    height:400px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    left:50%;
+    margin-left:-200px;
+    background: url('../images/footer.jpg');
+    top:20%;
+    -webkit-box-shadow: 0 0 30px #000;
+    -moz-box-shadow: 0 0 30px #000;
+    box-shadow: 0 0 30px #000;
+}
+.mask * {
+    font-family:"fzqk";
+}
+
+.mask .circle .circle_sign{
+    display: none;
+    text-align: center;
+}
+.mask .circle .circle_sign h1{
+    width: 1.5rem;
+    font-size:1.5rem;
+    margin-top:1.5rem;
+    color: #ae8184;
+}
+.mask .circle .circle_sign .txt{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size:1.25rem;
+    margin-top:1rem;
+}
+.mask .circle .circle_sign .sub{
+    color: #8b8b8b;
+    font-size:1rem;
+    margin-top: 120px;
+    display: block;
+}
+
+.mask .circle .circle_vote{
+    display: none;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background:url("../images/vote_QRcode.png") no-repeat center center;
+}
+.mask .circle .circle_solve{
+    display: none;
+    position: absolute;
+    width: 300px;
+    height:300px;
+    left:0;
+    right:0;
+    top:50px;
+    background:url("../images/solve.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
+
+
+.mask.sign .circle .circle_sign{
+    display: block;
+}
+.mask.vote .circle .circle_vote{
+    display: block;
+}
+.mask.solve .circle .circle_solve{
+    display: block;
+}
+

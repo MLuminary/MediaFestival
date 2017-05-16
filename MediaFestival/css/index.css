@@ -1,0 +1,175 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    min-width: 813px;
+    min-height: 446px;
+}
+body{
+    background: url(../images/index_container_background.jpg) no-repeat center center;
+    background-size: cover;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    color: #fff;
+}
+.nav{
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+}
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    margin-right: 30px;
+}
+.nav a:after{
+    content: "";
+    width: 0;
+    border-top: 2px solid #fff;
+    display: block;
+    margin: 0 auto;
+    transition: .5s;
+}
+.nav a:hover:after{
+    width: 100%;
+}
+
+.logo{
+    height:9.375rem;
+    width: 9.375rem;
+    background: url(../images/home_logo.png) no-repeat center center;
+    background-size: contain;
+    margin-top: 6.25rem;
+    animation: showLogo 2s forwards ease-in;
+}
+
+.slogan{
+    /*position: relative;*/
+    text-align: center;
+    font-family: "新宋体";
+    font-size: 1.791875rem;
+    margin-top: 5rem;
+    letter-spacing: 0;
+    animation: txtShow 2s ease-in;
+}
+.slogan::before{
+    content: "▲";
+    font-size: 1.25rem;
+    color: #af3e3e;
+    display: block;
+    margin: 1.875rem auto;
+    animation: show 2s ease-in;
+}
+.slogan::after{
+    content: "";
+    display: block;
+    width: 1.875rem;
+    border-bottom: 2px solid #af3e3e;
+    margin: 2.5rem auto;
+    animation: show 2s ease-in;
+}
+.summary{
+    margin-top: 8rem;
+    text-align: center;
+    font-size: 1.075rem;
+    font-family: "fzxd";
+    letter-spacing: .2em;
+}
+
+.more{
+    margin-top: 2rem;
+    text-align: center;
+}
+.more a{
+    font-family: "fzxd";
+    position: relative;
+    text-decoration: none;   
+    font-size: 1rem;
+    color: #fff;
+}
+.more a:after{
+    position: absolute;
+    top: 1px;
+    content: "<<";
+    color: #fff;
+    font-size: 0.965625rem;
+    right: -1.625rem;
+    animation: moveRight 1.5s infinite ease;
+}
+.more a::before{
+    position: absolute;
+    top: 1px;
+    content: ">>";
+    color: #fff;
+    font-size: 0.965625rem;
+    left: -1.75rem;
+    animation: moveLeft 1.5s infinite ease;
+}
+
+
+
+@keyframes showLogo{
+    0%{
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+@keyframes moveLeft{
+    0%{
+        opacity: 1;
+        left: -28px
+    }
+    50%{
+        opacity: .5;
+        left: -35px;
+    }
+    100%{
+        opacity: 1;
+        left: -28px;
+    }
+}
+@keyframes moveRight{
+    0%{
+        opacity: 1;
+        right: -26px
+    }
+    50%{
+        opacity: .5;
+        right: -33px;
+    }
+    100%{
+        opacity: 1;
+        right: -26px;
+    }
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes txtShow{
+    0%{
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+    100%{
+        letter-spacing: 0;
+        opacity: 1;
+    }
+
+}
+
+
+
+
