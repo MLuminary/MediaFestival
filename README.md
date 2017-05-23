@@ -35,3 +35,6 @@
    利用window.location.search就可以获取到select=photo，然后用split分解获取到
    一些相关的参数来再本页面的脚本使用，就可以实现两个页面的互动，本项目中点击不
    同的板块，跳转的页面相应呈现不同的内容就是利用此原理
+
+
+[原网站地址](https://www.sky31.com/html/special/2017cmsd/home.html)
